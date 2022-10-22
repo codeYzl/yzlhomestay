@@ -1,12 +1,19 @@
 <template>
-  <navHead></navHead>
+  <div>
+    <navHead></navHead>
+    <router-view></router-view>
+    <Footer></Footer>
+  </div>
+
 </template>
 <script>
-import navHead from './components/navHead.vue'
+import Footer from './components/Footer'
+import navHead from './components/navHead.vue';
 export default {
   name: '',
   components: {
-    navHead
+    navHead,
+    Footer
   }
 }
 </script>

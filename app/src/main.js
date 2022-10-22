@@ -9,6 +9,8 @@ Vue.config.productionTip = false
 // 引入jQuery、bootstrap
 // 全局注册 $
 Vue.prototype.$ = $
+import router from '@/router'
 new Vue({
   render: h => h(App),
+  router
 }).$mount('#app')
